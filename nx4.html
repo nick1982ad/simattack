@@ -1,0 +1,80 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 750px;
+            height: 750;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"id": 0, "label": 0, "length": 0, "raw_length": 1.0, "shape": "dot", "size": 10, "title": "w: 0 rw: 1.0"}, {"id": 11, "label": 11, "length": 3.729701448634192, "raw_length": 0.023999999999999987, "shape": "dot", "size": 10, "title": "w: 3.729701448634192 rw: 0.023999999999999987"}, {"id": 7, "label": 7, "length": 3.729701448634192, "raw_length": 0.023999999999999987, "shape": "dot", "size": 10, "title": "w: 3.729701448634192 rw: 0.023999999999999987"}, {"id": "\u041c\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043e\u04401", "label": "\u041c\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043e\u04401", "length": 3.729701448634192, "raw_length": 0.023999999999999987, "shape": "dot", "size": 10, "title": "w: 3.729701448634192 rw: 0.023999999999999987"}, {"id": "SCADA1", "label": "SCADA1", "length": 3.729701448634192, "raw_length": 0.023999999999999987, "shape": "dot", "size": 10, "title": "w: 3.729701448634192 rw: 0.023999999999999987"}, {"id": "start", "label": "start", "length": 0, "raw_length": 1.0, "shape": "dot", "size": 10, "title": "w: 0 rw: 1.0"}]);
+        edges = new vis.DataSet([{"arrows": "to", "from": 0, "label": "v3", "raw_weight": 0.023999999999999987, "to": 11, "weight": 3.729701448634192}, {"arrows": "to", "from": 0, "label": "v3", "raw_weight": 0.023999999999999987, "to": 7, "weight": 3.729701448634192}, {"arrows": "to", "from": 7, "raw_weight": 1, "to": "\u041c\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043e\u04401", "weight": 0}, {"arrows": "to", "from": 11, "raw_weight": 1, "to": "SCADA1", "weight": 0}, {"arrows": "to", "from": "start", "raw_weight": 1, "to": 0, "weight": 0}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {"physics": {"minVelocity": 0.75, "solver": "repulsion"}};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

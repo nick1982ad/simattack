@@ -1,0 +1,84 @@
+{
+  "name" : "ЖОПА",
+  "impact" : 10000,
+  "node_type" : "root",
+  "childs": [
+    {
+      "name" : "Отказ всего",
+      "impact" : 10000,
+      "node_type" : "and",
+      "childs": [
+        {
+          "name" : "Отказ АСУ ТП",
+          "impact" : 5000,
+          "node_type" : "or",
+          "childs" : [
+            {
+          "name" : "отказ сервера",
+          "impact" : 1000,
+          "node_type" : "or",
+          "childs": [
+            {
+              "name": "Сервер1",
+              "impact": 100,
+              "node_type": "basic"
+            },
+            {
+              "name" : "Отказ ПО сервера",
+              "impact" : 10,
+              "node_type" : "or",
+              "childs" : [
+                {
+                  "name": "ОС Server",
+                  "impact": 0,
+                  "node_type" : "basic"
+                },
+                {
+                  "name": "SCADA1",
+                  "impact" : 10,
+                  "node_type" : "basic"
+                }
+              ]
+            }
+          ]
+        },
+            {
+          "name": "Отказ АРМ",
+          "impact": 5,
+          "node_type": "and",
+          "childs" : [
+            {
+              "name" : "АРМ1",
+              "impact" : 1,
+              "node_type": "basic"
+            },
+            {
+              "name": "Отказ ПО",
+              "impact" : 1,
+              "node_type" : "or",
+              "childs" : [
+                {
+                  "name" : "ОС АРМ",
+                  "impact": 0,
+                  "node_type" : "basic"
+                },
+                {
+                  "name" : "SCADA Client",
+                  "impact" : 0,
+                  "node_type" : "basic"
+                }
+              ]
+            }
+          ]
+        }
+          ]
+        },
+        {
+          "name": "Маршрутизатор1",
+          "impact" : 50,
+          "node_type" : "basic"
+        }
+      ]
+    }
+  ]
+}
