@@ -50,41 +50,13 @@
         
 
         // parsing and collecting nodes and edges from the python
-        nodes = new vis.DataSet([{"id": "\u041e\u0442\u043a\u0430\u0437 \u0432\u0441\u0435\u0433\u043e", "impact": 10000, "label": "\u041e\u0442\u043a\u0430\u0437 \u0432\u0441\u0435\u0433\u043e", "loss": 1, "shape": "dot", "size": 10}, {"id": "\u0416\u041e\u041f\u0410", "impact": 10000, "label": "\u0416\u041e\u041f\u0410", "loss": 1, "shape": "dot", "size": 10}, {"id": "\u041e\u0442\u043a\u0430\u0437 \u0410\u0421\u0423 \u0422\u041f", "impact": 5000, "label": "\u041e\u0442\u043a\u0430\u0437 \u0410\u0421\u0423 \u0422\u041f", "loss": 0, "shape": "dot", "size": 10}, {"id": "\u043e\u0442\u043a\u0430\u0437 \u0441\u0435\u0440\u0432\u0435\u0440\u0430", "impact": 1000, "label": "\u043e\u0442\u043a\u0430\u0437 \u0441\u0435\u0440\u0432\u0435\u0440\u0430", "loss": 0, "shape": "dot", "size": 10}, {"id": "\u041e\u0442\u043a\u0430\u0437 \u041f\u041e \u0441\u0435\u0440\u0432\u0435\u0440\u0430", "impact": 10, "label": "\u041e\u0442\u043a\u0430\u0437 \u041f\u041e \u0441\u0435\u0440\u0432\u0435\u0440\u0430", "loss": 0, "shape": "dot", "size": 10}, {"id": "SCADA1", "impact": 10, "label": "SCADA1", "loss": 0, "shape": "dot", "size": 10}, {"id": "\u041c\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043e\u04401", "impact": 50, "label": "\u041c\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043e\u04401", "loss": 0, "shape": "dot", "size": 10}]);
+        nodes = new vis.DataSet([{"id": "\u041e\u0442\u043a\u0430\u0437 \u0432\u0441\u0435\u0433\u043e", "impact": 10000, "label": "\u041e\u0442\u043a\u0430\u0437 \u0432\u0441\u0435\u0433\u043e", "level": 1, "loss": 1, "shape": "dot", "size": 10}, {"id": "\u0416\u041e\u041f\u0410", "impact": 10000, "label": "\u0416\u041e\u041f\u0410", "level": 0, "loss": 1, "shape": "dot", "size": 10}, {"id": "\u041e\u0442\u043a\u0430\u0437 \u0410\u0421\u0423 \u0422\u041f", "impact": 5000, "label": "\u041e\u0442\u043a\u0430\u0437 \u0410\u0421\u0423 \u0422\u041f", "level": 2, "loss": 0, "shape": "dot", "size": 10}, {"id": "\u043e\u0442\u043a\u0430\u0437 \u0441\u0435\u0440\u0432\u0435\u0440\u0430", "impact": 1000, "label": "\u043e\u0442\u043a\u0430\u0437 \u0441\u0435\u0440\u0432\u0435\u0440\u0430", "level": 3, "loss": 0, "shape": "dot", "size": 10}, {"id": "\u041e\u0442\u043a\u0430\u0437 \u041f\u041e \u0441\u0435\u0440\u0432\u0435\u0440\u0430", "impact": 10, "label": "\u041e\u0442\u043a\u0430\u0437 \u041f\u041e \u0441\u0435\u0440\u0432\u0435\u0440\u0430", "level": 4, "loss": 0, "shape": "dot", "size": 10}, {"id": "SCADA1", "impact": 10, "label": "SCADA1", "level": 5, "loss": 0, "shape": "dot", "size": 10}, {"id": "\u041c\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043e\u04401", "impact": 50, "label": "\u041c\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043e\u04401", "level": 2, "loss": 0, "shape": "dot", "size": 10}]);
         edges = new vis.DataSet([{"arrows": "to", "capacity": 1, "flow": 1, "from": "\u041e\u0442\u043a\u0430\u0437 \u0432\u0441\u0435\u0433\u043e", "to": "\u0416\u041e\u041f\u0410", "weight": 1}, {"arrows": "to", "capacity": 1, "flow": 1, "from": "\u041e\u0442\u043a\u0430\u0437 \u0410\u0421\u0423 \u0422\u041f", "to": "\u041e\u0442\u043a\u0430\u0437 \u0432\u0441\u0435\u0433\u043e", "weight": 1}, {"arrows": "to", "capacity": 1, "flow": 1, "from": "\u043e\u0442\u043a\u0430\u0437 \u0441\u0435\u0440\u0432\u0435\u0440\u0430", "to": "\u041e\u0442\u043a\u0430\u0437 \u0410\u0421\u0423 \u0422\u041f", "weight": 1}, {"arrows": "to", "capacity": 1, "flow": 1, "from": "\u041e\u0442\u043a\u0430\u0437 \u041f\u041e \u0441\u0435\u0440\u0432\u0435\u0440\u0430", "to": "\u043e\u0442\u043a\u0430\u0437 \u0441\u0435\u0440\u0432\u0435\u0440\u0430", "weight": 1}, {"arrows": "to", "capacity": 1, "flow": 1, "from": "SCADA1", "to": "\u041e\u0442\u043a\u0430\u0437 \u041f\u041e \u0441\u0435\u0440\u0432\u0435\u0440\u0430", "weight": 1}, {"arrows": "to", "capacity": 1, "flow": 1, "from": "\u041c\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0442\u043e\u04401", "to": "\u041e\u0442\u043a\u0430\u0437 \u0432\u0441\u0435\u0433\u043e", "weight": 1}]);
 
         // adding nodes and edges to the graph
         data = {nodes: nodes, edges: edges};
 
-        var options = {
-    "configure": {
-        "enabled": false
-    },
-    "edges": {
-        "color": {
-            "inherit": true
-        },
-        "smooth": {
-            "enabled": false,
-            "type": "continuous"
-        }
-    },
-    "interaction": {
-        "dragNodes": true,
-        "hideEdgesOnDrag": false,
-        "hideNodesOnDrag": false
-    },
-    "physics": {
-        "enabled": true,
-        "stabilization": {
-            "enabled": true,
-            "fit": true,
-            "iterations": 1000,
-            "onlyDynamicEdges": false,
-            "updateInterval": 50
-        }
-    }
-};
+        var options = {"layout": {"hierarchical": {"enabled": true, "sortMethod": "directed", "direction": "UD"}}};
         
         
 

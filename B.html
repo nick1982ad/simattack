@@ -23,12 +23,6 @@
         
 
         
-        #config {
-            float: left;
-            width: 400px;
-            height: 600px;
-        }
-        
 
         
 </style>
@@ -38,8 +32,6 @@
 <body>
 <div id = "mynetwork"></div>
 
-
-<div id = "config"></div>
 
 <script type="text/javascript">
 
@@ -64,45 +56,10 @@
         // adding nodes and edges to the graph
         data = {nodes: nodes, edges: edges};
 
-        var options = {
-    "configure": {
-        "enabled": true,
-        "filter": [
-            "edges"
-        ]
-    },
-    "edges": {
-        "color": {
-            "inherit": true
-        },
-        "smooth": {
-            "enabled": false,
-            "type": "continuous"
-        }
-    },
-    "interaction": {
-        "dragNodes": true,
-        "hideEdgesOnDrag": false,
-        "hideNodesOnDrag": false
-    },
-    "physics": {
-        "enabled": true,
-        "stabilization": {
-            "enabled": true,
-            "fit": true,
-            "iterations": 1000,
-            "onlyDynamicEdges": false,
-            "updateInterval": 50
-        }
-    }
-};
+        var options = {"layout": {"hierarchical": {"enabled": true, "sortMethod": "directed"}}};
         
         
 
-        
-        // if this network requires displaying the configure window,
-        // put it in its div
-        options.configure["container"] = document.getElementById("config");
         
 
         network = new vis.Network(container, data, options);
