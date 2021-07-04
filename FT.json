@@ -1,5 +1,5 @@
 {
-  "name" : "ЖОПА",
+  "name" : "Корневое событие",
   "impact" : 10000,
   "node_type" : "root",
   "childs": [
@@ -10,17 +10,17 @@
       "childs": [
         {
           "name" : "Отказ АСУ ТП",
-          "impact" : 5000,
+          "impact" : 1000,
           "node_type" : "or",
           "childs" : [
             {
           "name" : "отказ сервера",
-          "impact" : 1000,
+          "impact" : 100,
           "node_type" : "or",
           "childs": [
             {
               "name": "Сервер1",
-              "impact": 100,
+              "impact": 10,
               "node_type": "basic"
             },
             {
@@ -30,12 +30,12 @@
               "childs" : [
                 {
                   "name": "ОС Server",
-                  "impact": 0,
+                  "impact": 1,
                   "node_type" : "basic"
                 },
                 {
                   "name": "SCADA1",
-                  "impact" : 10,
+                  "impact" : 1,
                   "node_type" : "basic"
                 }
               ]
@@ -44,27 +44,27 @@
         },
             {
           "name": "Отказ АРМ",
-          "impact": 5,
+          "impact": 100,
           "node_type": "and",
           "childs" : [
             {
               "name" : "АРМ1",
-              "impact" : 1,
+              "impact" : 10,
               "node_type": "basic"
             },
             {
               "name": "Отказ ПО",
-              "impact" : 1,
+              "impact" : 10,
               "node_type" : "or",
               "childs" : [
                 {
                   "name" : "ОС АРМ",
-                  "impact": 0,
+                  "impact": 1,
                   "node_type" : "basic"
                 },
                 {
                   "name" : "SCADA Client",
-                  "impact" : 0,
+                  "impact" : 1,
                   "node_type" : "basic"
                 }
               ]
@@ -75,7 +75,7 @@
         },
         {
           "name": "Маршрутизатор1",
-          "impact" : 50,
+          "impact" : 1000,
           "node_type" : "basic"
         }
       ]
