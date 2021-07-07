@@ -1,0 +1,25 @@
+{
+  "name" : "Корневое событие",
+  "impact" : 1,
+  "node_type" : "root",
+  "childs": [
+    {
+      "name" : "Отказ всего",
+      "impact" : 1,
+      "node_type" : "and",
+      "childs": [
+        {
+          "name" : "Компонент1",
+          "impact" : 0,
+          "node_type" : "basic"
+		},
+        {
+          "name" : "Компонент2",
+          "impact" : 0,
+          "node_type" : "basic"
+		}
+	  ]
+		
+	}
+	  ]
+}

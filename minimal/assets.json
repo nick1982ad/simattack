@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Компонент1",
+    "valuable" : 1,
+    "TTR" : 10,
+    "Network" : [
+    ],
+    "Local" : [
+    ],
+    "Physical" : [
+    ]
+  },
+  {
+    "title": "Компонент2",
+    "valuable" : 1,
+    "TTR" : 10,
+    "Network" : [
+    ],
+    "Local" : [
+    ],
+    "Physical" : [
+    ]
+  }
+]
