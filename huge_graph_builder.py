@@ -3,6 +3,7 @@ import networkx as nx
 import time
 # from pyvis.network import Network
 import pandas as pd
+import math
 from collections import OrderedDict
 import json
 import random
@@ -160,10 +161,11 @@ while len(Ctx.index):
                 G_dash.add_edge(int(a_begin.name), int(a_ex_ind), label=v_id)
     else:
         for a_end_id in Link_MG.nodes():
+            d = 0
             if nx.algorithms.shortest_paths.generic.has_path(Link_MG, source=a_begin['a_id'], target=a_end_id):
                 d = nx.shortest_path_length(Link_MG, source=a_begin['a_id'], target=a_end_id, weight='weight')
             else:
-                d = np.inf
+                d = math.inf
             a_name = a_end_id
             pr_a = get_pr_asset(A_df, 'a_id', a_end_id, 'PR')
             v_index = list(vuln_matrix[vuln_matrix[a_name] == 1].index)

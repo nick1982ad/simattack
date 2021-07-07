@@ -1,0 +1,63 @@
+[
+  {
+    "title": "АРМ1",
+    "valuable": 0,
+    "TTR": 5,
+    "Network": [
+      "Сеть2"
+    ],
+    "Local": [
+      "АРМ1"
+    ],
+    "Physical": [
+      "Помещение2"
+    ]
+  },
+  {
+    "title": "ОС АРМ",
+    "valuable": 0,
+    "TTR": 2,
+    "Network": [
+      "Сеть2"
+    ],
+    "Local": [
+      "АРМ1"
+    ],
+    "Physical": [
+    ]
+  },
+  {
+    "title": "SCADA client",
+    "valuable": 1,
+    "TTR": 2,
+    "Network": [
+      "Сеть2"
+    ],
+    "Local": [
+      "АРМ1"
+    ],
+    "Physical": [
+    ]
+  },
+  {
+    "title": "Помещение2",
+    "valuable": 0,
+    "TTR": 0,
+    "Network": [ ],
+    "Local": [ ],
+    "Physical": [
+      "Здание1",
+      "Помещение2"
+    ]
+  },
+  {
+    "title": "Здание1",
+    "valuable": 0,
+    "TTR": 0,
+    "Network": [ ],
+    "Local": [ ],
+    "Physical": [
+      "Здание1"
+    ]
+  }
+]

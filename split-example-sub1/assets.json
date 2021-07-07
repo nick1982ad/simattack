@@ -1,0 +1,80 @@
+[
+  {
+    "title": "Сервер1",
+    "valuable" : 1,
+    "TTR" : 10,
+    "Network" : [
+      "Сеть1"
+    ],
+    "Local" : [
+      "Сервер1"
+    ],
+    "Physical" : [
+      "Помещение1"
+    ]
+  },
+    {
+    "title": "ОС Server",
+    "valuable" : 0,
+    "TTR" : 2,
+    "Network" : [
+      "Сеть1"
+    ],
+    "Local" : [
+      "Сервер1"
+    ],
+    "Physical" : [
+
+    ]
+  },
+    {
+    "title": "SCADA1",
+    "valuable" : 1,
+    "TTR" : 5,
+    "Network" : [
+      "Сеть1"
+    ],
+    "Local" : [
+      "Сервер1"
+    ],
+    "Physical" : [
+
+    ]
+  },
+    {
+    "title": "Помещение1",
+    "valuable" : 0,
+    "TTR" : 0,
+    "Network" : [],
+    "Local" : [],
+    "Physical" : [
+      "Здание1",
+      "Помещение1"
+    ]
+  },
+    {
+    "title": "Маршрутизатор1",
+    "valuable" : 1,
+    "TTR" : 10,
+    "Network" : [
+      "Сеть1",
+      "Сеть2"
+    ],
+    "Local" : [
+      "Маршрутизатор1"
+    ],
+    "Physical" : [
+      "Помещение1"
+    ]
+  },
+    {
+    "title": "Здание1",
+    "valuable" : 0,
+    "TTR" : 0,
+    "Network" : [],
+    "Local" : [],
+    "Physical" : [
+      "Здание1"
+    ]
+  }
+]

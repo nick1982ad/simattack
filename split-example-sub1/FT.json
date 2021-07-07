@@ -1,0 +1,43 @@
+{
+  "name": "Отказ АСУ ТП",
+  "impact": 1000,
+  "node_type": "root",
+  "childs": [
+    {
+      "name": "отказ сервера",
+      "impact": 100,
+      "node_type": "k_from_n",
+      "k": 2,
+      "childs": [
+        {
+          "name": "Сервер1",
+          "impact": 10,
+          "node_type": "basic"
+        },
+        {
+          "name": "Маршрутизатор1",
+          "impact": 10,
+          "node_type": "basic"
+        },
+        {
+          "name": "Отказ ПО сервера",
+          "impact": 10,
+          "node_type": "or",
+          "childs": [
+            {
+              "name": "ОС Server",
+              "impact": 1,
+              "node_type": "basic"
+            },
+            {
+              "name": "SCADA1",
+              "impact": 1,
+              "node_type": "basic"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
