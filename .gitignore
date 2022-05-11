@@ -1,20 +1,8 @@
 
 log_msg.txt
-B.html
-B.html
-B.html
-B_reduce1.html
-B_reduce2.html
-B_test.html
-.ipynb_checkpoints/compare-checkpoint.ipynb
-.ipynb_checkpoints/Huge graph generator-checkpoint.ipynb
-.ipynb_checkpoints/simattack_v0.2-checkpoint.ipynb
-FT.html
-FT_full.html
-G_dash.html
-Испытания.xlsx
-~$Испытания.xlsx
-*.html
+.ipynb_checkpoints/
 *.html
 graphviz-draw.svg
 Оптимизации.png
+__pycache__/
+

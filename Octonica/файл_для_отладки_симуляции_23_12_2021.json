@@ -1,0 +1,410 @@
+﻿{
+  "subsystems": [
+    {
+      "originalId": "918394РГ" ,
+      "id": 0 ,
+      "caption": "Подсистема1"
+    } ,
+    {
+      "originalId": "782177УГ" ,
+      "id": 1 ,
+      "caption": "Подсистема2"
+    }
+  ] ,
+  "vulnerabilities": [
+    {
+      "probability": {
+        "kind": "value" ,
+        "value": 0.5
+      } ,
+      "av": "N" ,
+      "pr": "L" ,
+      "i": true ,
+      "scopeAv": "N" ,
+      "scopePr": "H" ,
+      "timeToExploit": {
+        "interval": 1 ,
+        "kind": "hour"
+      } ,
+      "originalId": "040248c5-8351-475f-8fd7-c5dceecb0ce5" ,
+      "id": 4 ,
+      "caption": "уязвимость 2_эталон" ,
+      "intruders": null
+    } ,
+    {
+      "probability": {
+        "kind": "value" ,
+        "value": 0.5
+      } ,
+      "av": "L" ,
+      "pr": "N" ,
+      "i": true ,
+      "scopeAv": "L" ,
+      "scopePr": "N" ,
+      "timeToExploit": {
+        "interval": 1 ,
+        "kind": "hour"
+      } ,
+      "originalId": "e63f973d-a76e-41bf-b975-14cebccb2486" ,
+      "id": 6 ,
+      "caption": "уязвимость 4_эталон" ,
+      "intruders": null
+    } ,
+    {
+      "probability": {
+        "kind": "value" ,
+        "value": 0.5
+      } ,
+      "av": "N" ,
+      "pr": "N" ,
+      "i": false ,
+      "scopeAv": "A" ,
+      "scopePr": "L" ,
+      "timeToExploit": {
+        "interval": 1 ,
+        "kind": "hour"
+      } ,
+      "originalId": "7a4c2975-f48d-44a0-8b58-20162b313363" ,
+      "id": 7 ,
+      "caption": "уязвимость 5_эталон" ,
+      "intruders": null
+    } ,
+    {
+      "probability": {
+        "kind": "range" ,
+        "start": 0.5 ,
+        "end": 0.5
+      } ,
+      "av": "L" ,
+      "pr": "N" ,
+      "i": true ,
+      "scopeAv": "L" ,
+      "scopePr": "L" ,
+      "timeToExploit": {
+        "interval": 1 ,
+        "kind": "hour"
+      } ,
+      "originalId": "21a9f44d-3b1d-41fd-94ef-7242dc8680f8" ,
+      "id": 11 ,
+      "caption": "Уязвимость организационная" ,
+      "intruders": null
+    } ,
+    {
+      "probability": {
+        "kind": "value" ,
+        "value": 0.5
+      } ,
+      "av": "N" ,
+      "pr": "N" ,
+      "i": true ,
+      "scopeAv": "N" ,
+      "scopePr": "N" ,
+      "timeToExploit": {
+        "interval": 1 ,
+        "kind": "hour"
+      } ,
+      "originalId": "ab4f2358-4a89-4c95-b04a-f8b4e5273217" ,
+      "id": 12 ,
+      "caption": "проверка модели уязвимости" ,
+      "intruders": [
+        "fdaec6d3-e8f3-4206-b71d-01774404c129"
+      ]
+    } ,
+    {
+      "probability": {
+        "kind": "value" ,
+        "value": 0.5
+      } ,
+      "av": "N" ,
+      "pr": "N" ,
+      "i": true ,
+      "scopeAv": "A" ,
+      "scopePr": "N" ,
+      "timeToExploit": {
+        "interval": 1 ,
+        "kind": "hour"
+      } ,
+      "originalId": "87ecb214-26d7-4e52-bd04-de9a8af57609" ,
+      "id": 15 ,
+      "caption": "проверки модели уязвимости 2" ,
+      "intruders": [
+        "fdaec6d3-e8f3-4206-b71d-01774404c129" ,
+        "603663d5-b312-46b3-9916-ab7d67474b00"
+      ]
+    } ,
+    {
+      "probability": {
+        "kind": "value" ,
+        "value": 0.5
+      } ,
+      "av": "N" ,
+      "pr": "N" ,
+      "i": false ,
+      "scopeAv": "L" ,
+      "scopePr": "H" ,
+      "timeToExploit": {
+        "interval": 1 ,
+        "kind": "hour"
+      } ,
+      "originalId": "01bbf91a-90f8-4f92-b408-d24e504b02f7" ,
+      "id": 17 ,
+      "caption": "Уязвимость программных пакетов для диспетчерского управления и сбора данных MC Works64/MC Works32, сервера FrameWorX, централизованная конфигурационной среды для HMI-/SCADA-приложений Workbench, программной платформы Platform Services, приложения для организации обмена ОРС GenBroker64/GenBroker32, связанная с недостатками механизма десериализации, позволяющая нарушителю вызвать отказ в обслуживании" ,
+      "intruders": [
+        "fdaec6d3-e8f3-4206-b71d-01774404c129"
+      ]
+    }
+  ] ,
+  "protectionMeasures": [
+    {
+      "preventionProbability": {
+        "kind": "value" ,
+        "value": 0.5
+      } ,
+      "detectionProbability": {
+        "kind": "value" ,
+        "value": 0.5
+      } ,
+      "period": {
+        "interval": 8 ,
+        "kind": "hour"
+      } ,
+      "originalId": "3967a601-de73-4f84-9e53-67636fec0013" ,
+      "id": 14 ,
+      "caption": "проверка модели мера защиты"
+    } ,
+    {
+      "preventionProbability": {
+        "kind": "value" ,
+        "value": 0.5
+      } ,
+      "detectionProbability": {
+        "kind": "value" ,
+        "value": 0.5
+      } ,
+      "period": {
+        "interval": 8 ,
+        "kind": "hour"
+      } ,
+      "originalId": "99b5f890-32eb-4385-84e9-2c1f4af5a848" ,
+      "id": 16 ,
+      "caption": "Антивирусная защита"
+    } ,
+    {
+      "preventionProbability": {
+        "kind": "value" ,
+        "value": 0.5
+      } ,
+      "detectionProbability": {
+        "kind": "value" ,
+        "value": 0.5
+      } ,
+      "period": {
+        "interval": 8 ,
+        "kind": "hour"
+      } ,
+      "originalId": "6c62fc89-ff58-4741-9a6c-1ac32c88b696" ,
+      "id": 21 ,
+      "caption": "проверка модели защиты 2"
+    }
+  ] ,
+  "nodes": [
+    {
+      "segments": [
+        {
+          "id": 2 ,
+          "kind": "channel"
+        } ,
+        {
+          "id": 2 ,
+          "kind": "network"
+        } ,
+        {
+          "id": 0 ,
+          "kind": "network"
+        } ,
+        {
+          "id": 0 ,
+          "kind": "channel"
+        }
+      ] ,
+      "softwareDefence": null ,
+      "software": [
+        {
+          "vulnerabilities": [
+            17 ,
+            12 ,
+            15
+          ] ,
+          "protectionMeasures": [
+            {
+              "protectionMeasureId": 16 ,
+              "vulnerabilities": null
+            }
+          ] ,
+          "isValuable": false ,
+          "subsystemId": 0 ,
+          "code": 9 ,
+          "class": "ПО" ,
+          "kks": null ,
+          "originalId": "311086РС" ,
+          "id": 18 ,
+          "caption": "Windows 10"
+        }
+      ] ,
+      "vulnerabilities": [
+        12 ,
+        15
+      ] ,
+      "protectionMeasures": [
+        {
+          "protectionMeasureId": 14 ,
+          "vulnerabilities": [
+            {
+              "id": 12 ,
+              "canPrevent": false ,
+              "canDetect": true ,
+              "recoveryTime": {
+                "interval": 8 ,
+                "kind": "hour"
+              }
+            } ,
+            {
+              "id": 15 ,
+              "canPrevent": false ,
+              "canDetect": false ,
+              "recoveryTime": {
+                "interval": 8 ,
+                "kind": "hour"
+              }
+            }
+          ]
+        }
+      ] ,
+      "isValuable": true ,
+      "subsystemId": 0 ,
+      "code": 8 ,
+      "class": "АРМ" ,
+      "kks": null ,
+      "originalId": "994988АЭ" ,
+      "id": 13 ,
+      "caption": "проверка модели АРМ"
+    } ,
+    {
+      "segments": [
+        {
+          "id": 0 ,
+          "kind": "channel"
+        } ,
+        {
+          "id": 0 ,
+          "kind": "network"
+        } ,
+        {
+          "id": 2 ,
+          "kind": "network"
+        } ,
+        {
+          "id": 2 ,
+          "kind": "channel"
+        }
+      ] ,
+      "softwareDefence": null ,
+      "software": [
+        {
+          "vulnerabilities": [
+            17 ,
+            12 ,
+            15
+          ] ,
+          "protectionMeasures": [
+            {
+              "protectionMeasureId": 16 ,
+              "vulnerabilities": null
+            }
+          ] ,
+          "isValuable": false ,
+          "subsystemId": 1 ,
+          "code": 11 ,
+          "class": "ПО" ,
+          "kks": null ,
+          "originalId": "473274ИВ" ,
+          "id": 22 ,
+          "caption": "Windows 10"
+        }
+      ] ,
+      "vulnerabilities": [
+        12 ,
+        15
+      ] ,
+      "protectionMeasures": [
+        {
+          "protectionMeasureId": 21 ,
+          "vulnerabilities": [
+            {
+              "id": 12 ,
+              "canPrevent": false ,
+              "canDetect": false ,
+              "recoveryTime": {
+                "interval": 8 ,
+                "kind": "hour"
+              }
+            } ,
+            {
+              "id": 15 ,
+              "canPrevent": false ,
+              "canDetect": false ,
+              "recoveryTime": {
+                "interval": 8 ,
+                "kind": "hour"
+              }
+            }
+          ]
+        }
+      ] ,
+      "isValuable": true ,
+      "subsystemId": 1 ,
+      "code": 10 ,
+      "class": "АРМ" ,
+      "kks": null ,
+      "originalId": "211008ОМ" ,
+      "id": 20 ,
+      "caption": "проверка модели АРМ2"
+    }
+  ] ,
+  "edges": [
+    {
+      "sourceNodeId": 13 ,
+      "targetNodeId": 20 ,
+      "vulnerabilities": [
+        11 ,
+        4 ,
+        6 ,
+        7 ,
+        12
+      ] ,
+      "protectionMeasures": null ,
+      "isValuable": false ,
+      "subsystemId": null ,
+      "code": 1 ,
+      "class": "Каналы, линии, интерфейсы связи" ,
+      "kks": null ,
+      "originalId": "001192ЧБ" ,
+      "id": 2 ,
+      "caption": "Ethernet"
+    }
+  ] ,
+  "initialContext": [
+    {
+      "assetId": 13 ,
+      "intruderId": "fdaec6d3-e8f3-4206-b71d-01774404c129" ,
+      "pr": "N" ,
+      "av": "N"
+    } ,
+    {
+      "assetId": 20 ,
+      "intruderId": "603663d5-b312-46b3-9916-ab7d67474b00" ,
+      "pr": "N" ,
+      "av": "N"
+    }
+  ]
+}
